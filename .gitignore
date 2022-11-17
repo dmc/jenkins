@@ -1,0 +1,19 @@
+.venv
+.vscode
+target/
+
+# Ignore all JENKINS_HOME except secret, users and root xml config
+/.jenkins/*
+!/.jenkins/jenkins.*
+!/.jenkins/*.xml
+!/.jenkins/secrets
+!/.jenkins/secret.*
+!/.jenkins/users
+!/.jenkins/nodes
+
+
+# Ignore all files in jobs subdirectories except for folders.
+!/.jenkins/jobs
+/.jenkins/jobs/**
+!/.jenkins/jobs/**/
+!config.xml
